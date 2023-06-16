@@ -50,29 +50,7 @@ class MainActivity : AppCompatActivity() {
 
     }//end onCreate()
 
-    fun unzipGzipFile(gzipFile: File) :File {
-        val outputFile = File(cacheDir, "temp.pdf")
-        try {
-            val gzipInputStream = GZIPInputStream(FileInputStream(gzipFile))
 
-            val outputFile = File(cacheDir, "temp.pdf")
-            val outputStream = FileOutputStream(outputFile)
-            val buffer = ByteArray(1024)
-            var bytesRead: Int
-
-            while (gzipInputStream.read(buffer).also { bytesRead = it } != -1) {
-                outputStream.write(buffer, 0, bytesRead)
-            }
-
-            gzipInputStream.close()
-            outputStream.close()
-
-        } catch (e: IOException) {
-            e.printStackTrace()
-
-        }
-        return outputFile
-    }
     private fun downloadInsuranceFile(gzUrl: String): File {
         val downloadedFileName = "temp3.pdf"
         val file = File(cacheDir, downloadedFileName)
