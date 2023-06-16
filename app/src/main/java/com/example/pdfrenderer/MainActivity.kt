@@ -1,5 +1,4 @@
 package com.example.pdfrenderer
-
 import android.graphics.Bitmap
 import android.graphics.pdf.PdfRenderer
 import android.os.Build
@@ -15,13 +14,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.InputStream
 import java.net.URL
-import java.util.zip.GZIPInputStream
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var pdfImageView: ImageView
