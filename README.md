@@ -1,8 +1,9 @@
 This is a small application that shows one way to: 
 
-1. Download a PDF
-2. Convert it to and image
-3. Display the image in a Webview using HTML
+1. Download a GZIP
+2. Unzip to PDF
+2. Convert PDF to an image
+3. Display the image zoomed out in a Webview using HTML
 
-This app does not unzip a gzip file yet, that part needs to be worked on.
+
  
