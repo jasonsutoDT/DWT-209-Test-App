@@ -42,9 +42,7 @@ class MainActivity : AppCompatActivity() {
             displayBitmapsInWebView(base64Images)
 
         }
-
     }//end onCreate()
-
 
     private fun downloadInsuranceFile(gzUrl: String): File {
        // val downloadedFileName = "temp3.pdf"
@@ -104,7 +102,6 @@ class MainActivity : AppCompatActivity() {
         return bitmapList
     }
 
-
     private fun bitmapsToBase64(bitmapList: List<Bitmap>?): List<String> {
         val stringList=  mutableListOf<String>()
 
@@ -145,10 +142,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
-
-
-
 
 }
